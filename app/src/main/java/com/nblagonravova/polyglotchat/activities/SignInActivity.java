@@ -1,4 +1,4 @@
-package com.nblagonravova.polyglotchat;
+package com.nblagonravova.polyglotchat.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.nblagonravova.polyglotchat.R;
 
 import static android.view.View.OnClickListener;
 
@@ -55,6 +57,9 @@ public class SignInActivity extends AppCompatActivity{
                         String email  = mEmail.getText().toString();
                         String password = mPassword.getText().toString();
 //                      userSignIn(email, password);
+                        Intent userListIntent = UserListActivity.newIntent(SignInActivity.this);
+                        startActivity(userListIntent);
+                        finish();
                         break;
                     case R.id.button_registration:
                         Intent intent = SignUpActivity.newIntent(SignInActivity.this);

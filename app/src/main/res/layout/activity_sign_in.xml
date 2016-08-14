@@ -95,8 +95,7 @@
             android:layout_height="@dimen/social_sign_in_icon_size"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/sign_in_twitter"
-            android:elevation="5dp"/>
+            android:src="@drawable/sign_in_twitter"/>
 
         <ImageView
             android:id="@+id/button_sign_in_facebook"
@@ -105,8 +104,7 @@
             android:layout_toRightOf="@id/button_sign_in_twitter"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/sign_in_facebook"
-            android:elevation="5dp"/>
+            android:src="@drawable/sign_in_facebook"/>
 
         <ImageView
             android:id="@+id/button_sign_in_google_plus"
@@ -115,8 +113,7 @@
             android:layout_toRightOf="@id/button_sign_in_facebook"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/sign_in_google_plus"
-            android:elevation="5dp"/>
+            android:src="@drawable/sign_in_google_plus"/>
 
         <TextView
             android:id="@+id/label_social_networks_sign_in"
