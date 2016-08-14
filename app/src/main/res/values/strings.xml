@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PolyglotChat</string>
+
+    <string name="email">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="social_networks_sign_in">Войти через социальные сети</string>
+
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="full_name">Полное имя</string>
+
+    <string name="sign_up_error">Ошибка регистрации</string>
+    <string name="sign_in_error">Ошибка входа</string>
+
+</resources>
+

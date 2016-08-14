@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="sign_in_and_sign_up_text_size">16sp</dimen>
+
+    <dimen name="social_sign_in_icon_size">60dp</dimen>
+    <dimen name="app_icon_size">170dp</dimen>
+    <dimen name="app_icon_margin_top">20dp</dimen>
+    <dimen name="text_input_margin">4dp</dimen>
+    <dimen name="main_button_margin_top">8dp</dimen>
+    <dimen name="main_button_margin_bottom">16dp</dimen>
+    <dimen name="main_button_padding">12dp</dimen>
+    <dimen name="social_sign_in_margin_top">12dp</dimen>
+</resources>
