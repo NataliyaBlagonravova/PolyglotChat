@@ -14,15 +14,19 @@ import com.nblagonravova.polyglotchat.model.User;
 
 import java.util.List;
 
+import static com.nblagonravova.polyglotchat.fragments.UserListFragment.Callbacks;
+
 public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserViewHolder> {
 
     private static final String TAG = UserListAdapter.class.getSimpleName();
 
     private Context mContext;
+    Callbacks mCallbacks;
     private List<User> mUserList;
 
-    public UserListAdapter(Context context, List<User> userList) {
+    public UserListAdapter(Context context, Callbacks callbacks, List<User> userList) {
         mContext = context;
+        mCallbacks = callbacks;
         mUserList = userList;
     }
 
@@ -46,6 +50,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
     public class UserViewHolder extends RecyclerView.ViewHolder{
 
+        private User mUser;
+
         private TextView mFullNameTextView;
         private TextView mStatusTextView;
         private ImageView mPhotoImageView;
@@ -54,16 +60,27 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
         public UserViewHolder(View itemView) {
             super(itemView);
 
-            mFullNameTextView = (TextView) itemView.findViewById(R.id.user_list_item_full_name);
-            mStatusTextView = (TextView) itemView.findViewById(R.id.user_list_item_status);
-            mPhotoImageView = (ImageView) itemView.findViewById(R.id.user_list_item_photo);
+            mFullNameTextView = (TextView) itemView.findViewById(R.id.chat_list_item_text);
+            mStatusTextView = (TextView) itemView.findViewById(R.id.chat_list_item_date);
+            mPhotoImageView = (ImageView) itemView.findViewById(R.id.chat_list_item_photo);
             mNationalityFlagImageView = (ImageView) itemView
-                    .findViewById(R.id.user_list_item_nationality_flag);
+                    .findViewById(R.id.chat_list_item_photo);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mCallbacks.onUserSelected(mUser);
+                }
+            });
         }
 
         public void bindUser(User user){
+            mUser = user;
+
             mFullNameTextView.setText(user.getFullName());
             mStatusTextView.setText(user.getStatus());
         }
     }
+
+
 }

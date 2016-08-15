@@ -1,6 +1,7 @@
 package com.nblagonravova.polyglotchat.fragments;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,12 @@ public class UserListFragment extends Fragment {
     private static final String TAG = UserListFragment.class.getSimpleName();
 
     private RecyclerView mUserRecyclerView;
+
+    public interface Callbacks{
+        void onUserSelected(User user);
+    }
+
+    Callbacks mCallbacks;
 
     public static UserListFragment newInstance(){
         return new UserListFragment();
@@ -56,7 +63,19 @@ public class UserListFragment extends Fragment {
         };
 
         List<User> userList = Arrays.asList(users);
-        mUserRecyclerView.setAdapter(new UserListAdapter(getActivity(), userList));
+        mUserRecyclerView.setAdapter(new UserListAdapter(getActivity(), mCallbacks, userList));
         return view;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mCallbacks = (Callbacks) activity;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallbacks = null;
     }
 }
