@@ -60,9 +60,9 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
         public UserViewHolder(View itemView) {
             super(itemView);
 
-            mFullNameTextView = (TextView) itemView.findViewById(R.id.chat_list_item_text);
-            mStatusTextView = (TextView) itemView.findViewById(R.id.chat_list_item_date);
-            mPhotoImageView = (ImageView) itemView.findViewById(R.id.chat_list_item_photo);
+            mFullNameTextView = (TextView) itemView.findViewById(R.id.user_list_item_full_name);
+            mStatusTextView = (TextView) itemView.findViewById(R.id.user_list_item_status);
+            mPhotoImageView = (ImageView) itemView.findViewById(R.id.user_list_item_photo);
             mNationalityFlagImageView = (ImageView) itemView
                     .findViewById(R.id.chat_list_item_photo);
 
