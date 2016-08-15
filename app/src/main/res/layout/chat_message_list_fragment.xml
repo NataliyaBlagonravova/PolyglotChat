@@ -7,6 +7,34 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/chat_message_list_fragment_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_message_list_fragment_footer"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/chat_message_list_fragment_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/chat_message_list_fragment_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/chat_message_list_fragment_button_send"
+            android:layout_width="@dimen/chat_message_list_button_send_size"
+            android:layout_height="@dimen/chat_message_list_button_send_size"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:background="@drawable/button_send"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

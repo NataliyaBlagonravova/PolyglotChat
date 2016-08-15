@@ -23,4 +23,5 @@
     <dimen name="list_item_small_icon_size">24dp</dimen>
     <dimen name="list_item_small_icon_margin">4dp</dimen>
     <dimen name="list_item_margin_from_container">8dp</dimen>
+    <dimen name="chat_message_list_button_send_size">32dp</dimen>
 </resources>
