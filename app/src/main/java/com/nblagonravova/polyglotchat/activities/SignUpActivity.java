@@ -15,11 +15,11 @@ public class SignUpActivity extends AppCompatActivity{
 
     private static final String TAG = SignUpActivity.class.getSimpleName();
 
-    EditText mFullName;
-    EditText mEmail;
-    EditText mPassword;
+    private EditText mFullName;
+    private EditText mEmail;
+    private EditText mPassword;
 
-    Button mSignUpButton;
+    private Button mSignUpButton;
 
     public static Intent newIntent(Context context) {
         Intent intent = new Intent(context, SignUpActivity.class);

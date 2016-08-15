@@ -18,8 +18,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
     private static final String TAG = UserListAdapter.class.getSimpleName();
 
-    Context mContext;
-    List<User> mUserList;
+    private Context mContext;
+    private List<User> mUserList;
 
     public UserListAdapter(Context context, List<User> userList) {
         mContext = context;
@@ -46,10 +46,10 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
     public class UserViewHolder extends RecyclerView.ViewHolder{
 
-        TextView mFullNameTextView;
-        TextView mStatusTextView;
-        ImageView mPhotoImageView;
-        ImageView mNationalityFlagImageView;
+        private TextView mFullNameTextView;
+        private TextView mStatusTextView;
+        private ImageView mPhotoImageView;
+        private ImageView mNationalityFlagImageView;
 
         public UserViewHolder(View itemView) {
             super(itemView);

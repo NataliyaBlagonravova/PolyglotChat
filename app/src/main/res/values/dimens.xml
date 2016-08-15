@@ -4,7 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="sign_in_and_sign_up_text_size">16sp</dimen>
-
     <dimen name="social_sign_in_icon_size">60dp</dimen>
     <dimen name="app_icon_size">170dp</dimen>
     <dimen name="app_icon_margin_top">20dp</dimen>
@@ -13,8 +12,15 @@
     <dimen name="main_button_margin_bottom">16dp</dimen>
     <dimen name="main_button_padding">12dp</dimen>
     <dimen name="social_sign_in_margin_top">12dp</dimen>
+
     <dimen name="list_item_min_height">72dp</dimen>
     <dimen name="list_item_icon_size">40dp</dimen>
     <dimen name="list_view_margin">16dp</dimen>
     <dimen name="list_view_padding">16dp</dimen>
+    <dimen name="list_item_photo_container_size">56dp</dimen>
+    <dimen name="list_item_photo_container_margin_top">8dp</dimen>
+    <dimen name="list_view_margin_from_container">8dp</dimen>
+    <dimen name="list_item_small_icon_size">24dp</dimen>
+    <dimen name="list_item_small_icon_margin">4dp</dimen>
+    <dimen name="list_item_margin_from_container">8dp</dimen>
 </resources>
